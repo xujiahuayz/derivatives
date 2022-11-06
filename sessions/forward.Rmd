@@ -88,11 +88,11 @@ Futures are **exchange-traded** version of forwards
 | Contract terms           | Tailored           | Standardized                              |
 | Unilateral reversal      | Difficult          | Easy                                      |
 
-## E-mini S&P 500 Index Futures Contract
+## E-mini S&P500 Index Futures Contract
 
 Most popular equity index futures contract in the world
 
--   **Contract size**: \$50 $\times$ S&P 500 Index price (0.2 of the standard S&P 500 futures contract)
+-   **Contract size**: \$50 $\times$ S&P500 Index price (0.2 of the standard S&P500 futures contract)
 -   **Contract month**: March quarterly expiration cycle (Mar, Jun, Sep, Dec)
 -   **Trading hours**: CME Globex (essentially around the clock from Sunday evening to late Friday afternoon)
 -   **Trading termination**: 8.30am on the Settlement Date (3rd Friday of the contract month)
@@ -156,3 +156,163 @@ For example, if the actual forward price is quoted at 41.2
 | **Sell high:**     | Short forward               | 0     | $41.2-S_T$            |
 |                    |                             |       |                       |
 | **Net cash flows** |                             | 0     | £0.4                  |
+
+## Cost of carry relationship
+
+-   Consider another stock
+
+    -   currently traded at £40
+    -   pays a dividend of £1 in 5 months
+    -   with an expected return of 5% p.a.
+    -   risk-free rate is 2% p.a.
+
+-   How much would you **agree to** today, to pay to buy the stock a year from now?
+
+$40 \times (1+2\%) - 1 \times (1+2\% \times \frac{6}{12}) = 39.79$
+
+------------------------------------------------------------------------
+
+For assets that can be traded spot and stored, forwards futures prices are linked to spot prices through the "cost of carry" relationship:
+
+$$
+F = S \times (1+r_j)^T - FV(\text{holding benefits}) + FV(\text{holding costs})
+$$ where
+
+$F$: forward price
+
+$S$: current spot price
+
+$r_f$: risk-free rate
+
+$T$: maturity of the contract
+
+Holding benefits (costs) are the benefits (costs), typically cashflows, associated with holding the UL that you miss when buying in the future compared to buying now
+
+$FV$: future value, i.e. compounded to $T$ at risk-free rate
+
+## Forward and future -- applications
+
+-   Contracts for difference (CFDs)
+-   Profitable alpha (futures overlay) strategies
+-   Commodities investing
+
+## Contracts for difference (CFDs)
+
+A CFD is a contract between a buyer and a seller, stipulating that:
+
+-   if the price of the UL increases, the seller pays the buyer the increase
+-   if the price falls, the buyer pays the seller the decrease
+
+| Cashflows             | Today | $T$     |
+|-----------------------|-------|---------|
+| to CFD buyer (long)   | 0     | $S_T-S$ |
+| to CFD seller (short) | 0     | $S-S_T$ |
+
+In addition:
+
+-   the buyer pays the seller daily interst on the initial value of the UL
+-   the seller pays the buyer any dividends / coupons on the underlying
+-   margin requirements for end user
+
+## CFDs vs forwards & futures
+
+| Cashflows             | Today | From today to $T$ | $T$     |
+|-----------------------|-------|-------------------|---------|
+| to CFD buyer (long)   | 0     | interest on $S$   | $S_T-S$ |
+| to CFD seller (short) | 0     | 0                 | $S-S_T$ |
+
+
+## Is the forward price the expected spot price?
+
+- is $F=\mathbb{E}[S_T]$
+- Simplest setting: ignoring holding costs / benefits, using simple compounding at an annual risk-free rate $r_f$, for a 1-year forward
+
+$$F = S \times (1+r_f)$$
+
+- According to standard finance theories, the (risky) UL should earn a risk premium $\pi$
+
+$\mathbb{E}[S_T] = S \times (1+r_f+\pi)$
+
+therefore $F \neq \mathbb{E}[S_T]$
+
+---
+
+- Actual payoff on a long forward: $S_T - F$
+- The **expected** payoff on a long forward is
+$$
+\mathbb{E}[S_T-F] = S \times (1 + r_f + \pi) - S \times (1 + r_f) = S \times \pi
+$$
+
+- The expected return on the long forward (as a percentage of the *current price of the underlying*) is the risk premium
+- By going long (short) forwards / futures you assume (lay off) the risk premium on the UL
+
+
+## Portable alpha strategies
+
+- According to the CAPM, the risk premium on a stokc or portfolio is:
+
+$\mathbb{E}(R_i) - R_f = \beta[\mathbb{E}(R_m) - R_f]$
+where
+$\beta = \frac{\sigma_{R_i,R_m}}{\sigma^2_{R_m}}$
+
+where:
+
+$R_i,R_m$: the returns on the portfolio and the "market", respectively
+
+$R_f$: the risk-free rate of return
+
+$\mathbb{E}[]$: expected value
+
+$\sigma_{R_i,R_m}$: the covariance between $R_i$ and $R_m$
+
+$\sigma^2_{R_m}$: the variance of $R_m$
+
+- The expected excess return on a stock is compensation for taking on (non-diversifiable) "market" risk
+
+---
+
+If you run the regression:
+
+$$
+R_i - R_f = \alpha + \beta (R_m - R_f)  + \epsilon
+$$
+
+and securities are efficiently priced, alpha should not be statistically significantly different from zero
+
+- For actively managed portfolios, if alpha is positive this is typically interpreted as evidence of stock-picking ability
+
+---
+
+Use futures overlays to create a position where you earn beta in one asset category and alpha in another:
+
+- You have £1m to invest and a target beta of 1 wrt the S&P500
+- You believe there are no alpha opportunities in S&P500 stocks but you have identified a market-neutral (zero-beta) hedge fund that you believe will generate positive alpha
+
+To capture the S&P beta return as well as the hedge fund alpha:
+
+- invest £1m in the "market-neutral" hedge fund
+- go long £1m 1-yr S&P500 futures
+
+
+## Commodity forwards / futures pricing
+
+- The cost of carry relationship
+
+$F = S + \text{intest cost} - \text{holding benefit} + \text{holding costs}$
+
+- For commodities, this becomes
+
+$F = S + \text{intest cost} - \text{convenience yield} + \text{storage costs}$
+
+Convenience yield
+- The convenicen yield (CY) is a holding benefit
+- Unlike holding benefits on financial aseets (eg dividends or coupons), CY is NOT a cashflow ensured if you are long the underlying
+- The CY captures the "intangible" benefits of holding the underlying spot for those who consume it / use it in production
+
+## Investing in commodities
+
+Commodities as an asset class
+- low (negative) correlations with stocks and bonds
+- hedge against inflation ("real return" asset class)
+- exposure to emerging markets growth ("commodities super cycle")
+- strong performance (relative to equities) during 2000-2007
