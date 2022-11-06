@@ -112,4 +112,47 @@ Most popular equity index futures contract in the world
 | Future price  | 106 | 108       | 104        | 105       | $S_T=107$ |
 | Long receives | 0   | 108-106=2 | 104-108=-4 | 105-104=1 | 107-105=2 |
 
--   Note that $\sum(\text{cash flow long receives}) = 1$,  equal to the payoff on a forward position where the forward price is the original futures price $S_T - F = 107-106 = 1$
+-   Note that $\sum(\text{cash flow long receives}) = 1$, equal to the payoff on a forward position where the forward price is the original futures price $S_T - F = 107-106 = 1$
+
+## Fair forward price
+
+-   Consider a stock
+
+    -   currently traded at £40
+    -   does not pay dividends
+    -   with an expected return of 5% p.a.
+    -   risk-free rate is 2% p.a.
+
+-   How much would you **agree to** today, to pay to buy the stock a year from now?
+
+(a) £40
+(b) £40.8
+(c) £42
+
+## Arbitrage-free pricing
+
+Replicate the same cashflow as a long forward contract by buying the stock today using borrowed money and repaying the borrowing with interest at $T$:
+
+|                                        | Today | **Delivery date** $T$ |
+|----------------------------------------|-------|-----------------------|
+| **Long forward**                       | 0     | $S_T-F$               |
+| "Cash and carry" replicating strategy: |       |                       |
+| Buy stock today                        | $-40$ | $S_T$                 |
+| Borrow £40 for 1 year at 2%            | $40$  | $-40.8$               |
+| **Net**                                | 0     | $S_T-40.8$            |
+
+------------------------------------------------------------------------
+
+The fair forward price is 40.8; otherwise there is an arbitrage opportunity.
+
+For example, if the actual forward price is quoted at 41.2
+
+|                    |                             | Today | **Delivery date** $T$ |
+|--------------------|-----------------------------|-------|-----------------------|
+| **Buy low:**       | Buy stock today             | $-40$ | $S_T$                 |
+|                    | Borrow £40 for 1 year at 2% | 40    | $-40.8$               |
+|                    | Net                         | 0     | $S_T-40.8$            |
+|                    |                             |       |                       |
+| **Sell high:**     | Short forward               | 0     | $41.2-S_T$            |
+|                    |                             |       |                       |
+| **Net cash flows** |                             | 0     | £0.4                  |
