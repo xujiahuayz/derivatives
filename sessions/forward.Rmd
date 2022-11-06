@@ -80,7 +80,6 @@ text(1+0.1, 0-0.1, label = '$F$')
 
 Futures are **exchange-traded** version of forwards
 
-
 |                          | **Forwards**       | **Futures**                               |
 |--------------------------|--------------------|-------------------------------------------|
 | Buyer-seller interaction | Direct             | Via exchange                              |
@@ -89,18 +88,28 @@ Futures are **exchange-traded** version of forwards
 | Contract terms           | Tailored           | Standardized                              |
 | Unilateral reversal      | Difficult          | Easy                                      |
 
-
 ## E-mini S&P 500 Index Futures Contract
 
-Most popular equity index futures contract in the world 
+Most popular equity index futures contract in the world
 
-- **Contract size**: \$50 $\times$ S&P 500 Index price (0.2 of the standard S&P 500 futures contract)
-- **Contract month**: March quarterly expiration cycle (Mar, Jun, Sep, Dec)
-- **Trading hours**: CME Globex (essentially around the clock from Sunday evening to late Friday afternoon)
-- **Trading termination**: 8.30am on the Settlement Date (3rd Friday of the contract month)
-- **Settlement procedure**: Cash settlement based on the Special Opening Quotation on Friday morning of the S&P500 Index
-- **Position limits**: 20,000 S&P500 contracts or equivalent net long or short in all contract months combined
+-   **Contract size**: \$50 $\times$ S&P 500 Index price (0.2 of the standard S&P 500 futures contract)
+-   **Contract month**: March quarterly expiration cycle (Mar, Jun, Sep, Dec)
+-   **Trading hours**: CME Globex (essentially around the clock from Sunday evening to late Friday afternoon)
+-   **Trading termination**: 8.30am on the Settlement Date (3rd Friday of the contract month)
+-   **Settlement procedure**: Cash settlement based on the Special Opening Quotation on Friday morning of the S&P500 Index
+-   **Position limits**: 20,000 S&P500 contracts or equivalent net long or short in all contract months combined
 
+## Futures contracts - marking to market
 
+-   Similar economic effect to forwards, but, due to **marking to market**, gains and losses on futures positions are settled each day
 
+-   After **marking to market**, both sides have a zero value position with the new (end of day) futures price.
 
+-   The long receives from (pays to) the short any increase (decrease) in the futures price from the previous day
+
+| Date          | 0   | 1         | 2          | 3         | $T=4$     |
+|---------------|-----|-----------|------------|-----------|-----------|
+| Future price  | 106 | 108       | 104        | 105       | $S_T=107$ |
+| Long receives | 0   | 108-106=2 | 104-108=-4 | 105-104=1 | 107-105=2 |
+
+-   Note that $\sum(\text{cash flow long receives}) = 1$,  equal to the payoff on a forward position where the forward price is the original futures price $S_T - F = 107-106 = 1$
