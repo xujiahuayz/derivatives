@@ -1,0 +1,10 @@
+## What are derivatives
+
+A derivative is
+
+- a financial security or contract whose value **derives** from the value of  another asset / assets, known as the **underlying** (UL)
+- an instrument for **transferring risk** and can therefore be used for
+    - **hedging**: alter the exposure to an asset / risk you already have
+    - **investment / speculation**: take on an exposure to an asset / risk
+    
+<!-- TODO: screenshots -->

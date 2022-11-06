@@ -1,0 +1,88 @@
+---
+title: Financial Risk Management
+subtitle: Derivatives
+author: "Jiahua (Java) Xu, Ph.D."
+date: "`r format(Sys.time(), '%Y')`"
+classoption: aspectratio=169    
+output:
+  beamer_presentation:
+    slide_level: 2
+    theme: Dresden
+    keep_tex: no
+    toc: false
+    incremental: false
+    colortheme: beaver
+    fonttheme: structurebold
+    highlight: haddock
+    includes:
+      in_header: diss-beamer.sty
+  ioslides_presentation:
+    logo: figure/ucllogo.svg
+  slidy_presentation:
+    footer: "Derivatives"
+knit: (
+  function(inputFile, encoding) { 
+  
+    pSubTitle <- 'derivatives'
+  
+    rmarkdown::render( 
+      input       = inputFile, 
+      encoding    = encoding, 
+      params      = list(sub_title = pSubTitle),      
+      output_file = pSubTitle) })
+link-citations: yes
+# bibliography: Blockchain.bib
+# suppress-bibliography: no
+...
+
+```{r echo=FALSE, warning=FALSE}
+library(magrittr)
+library(knitr)
+library(tikzDevice)
+
+opts_chunk$set(
+  dev = 'tikz',
+  fig.path = 'figure/',
+  echo = FALSE,
+  error = FALSE,
+  cache = TRUE,
+  message = FALSE,
+  results = 'hide',
+  warning = FALSE,
+  autodep = TRUE
+)
+```
+
+
+```{r child = 'sessions/intro.Rmd', eval=TRUE}
+```
+
+```{r child = 'sessions/forward.Rmd', eval=TRUE}
+```
+
+
+## Thank you!
+
+**Contact**
+
+\vspace{0.6cm}
+
+Jiahua (Java) Xu
+
+\vspace{0.4cm}
+
+UCL Centre for Blockchain Technologies
+
+
+66-72 Gower Street
+
+
+
+\vspace{0.4cm}
+
+jiahua.xu@ucl.ac.uk
+
+## References {.allowframebreaks}
+\small
+
+\widowpenalties 1 0
