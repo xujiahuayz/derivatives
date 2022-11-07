@@ -305,6 +305,7 @@ $F = S + \text{intest cost} - \text{holding benefit} + \text{holding costs}$
 $F = S + \text{intest cost} - \text{convenience yield} + \text{storage costs}$
 
 Convenience yield
+
 - The convenicen yield (CY) is a holding benefit
 - Unlike holding benefits on financial aseets (eg dividends or coupons), CY is NOT a cashflow ensured if you are long the underlying
 - The CY captures the "intangible" benefits of holding the underlying spot for those who consume it / use it in production
@@ -312,6 +313,7 @@ Convenience yield
 ## Investing in commodities
 
 Commodities as an asset class
+
 - low (negative) correlations with stocks and bonds
 - hedge against inflation ("real return" asset class)
 - exposure to emerging markets growth ("commodities super cycle")

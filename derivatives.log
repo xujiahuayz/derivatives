@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.12.11)  6 NOV 2022 16:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.12.11)  7 NOV 2022 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -849,33 +849,107 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks52
 \minrowclearance=\skip90
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithm.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/us
+r/local/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box85
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen317
+\pgf@nodesepend=\dimen318
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr
+/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/
+texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/loca
+l/texlive/2021/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/20
+21/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2021/
+texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen319
+\pgffor@skip=\dimen320
+\pgffor@stack=\toks53
+\pgffor@toks=\toks54
+))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count352
+\pgfplotmarksize=\dimen321
+)
+\tikz@lastx=\dimen322
+\tikz@lasty=\dimen323
+\tikz@lastxsaved=\dimen324
+\tikz@lastysaved=\dimen325
+\tikz@lastmovetox=\dimen326
+\tikz@lastmovetoy=\dimen327
+\tikzleveldistance=\dimen328
+\tikzsiblingdistance=\dimen329
+\tikz@figbox=\box86
+\tikz@figbox@bg=\box87
+\tikz@tempbox=\box88
+\tikz@tempbox@bg=\box89
+\tikztreelevel=\count353
+\tikznumberofchildren=\count354
+\tikznumberofcurrentchild=\count355
+\tikz@fig@count=\count356
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count357
+\pgfmatrixcurrentcolumn=\count358
+\pgf@matrix@numberofcolumns=\count359
+)
+\tikz@expandcount=\count360
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 (/usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count352
-\float@exts=\toks53
-\float@box=\box85
-\@float@everytoks=\toks54
-\@floatcapt=\box86
+\c@float@type=\count361
+\float@exts=\toks55
+\float@box=\box90
+\@float@everytoks=\toks56
+\@floatcapt=\box91
 )
-\@float@every@algorithm=\toks55
-\c@algorithm=\count353
+\@float@every@algorithm=\toks57
+\c@algorithm=\count362
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count354
-\c@ALC@line=\count355
-\c@ALC@rem=\count356
-\c@ALC@depth=\count357
+\c@ALC@unique=\count363
+\c@ALC@line=\count364
+\c@ALC@rem=\count365
+\c@ALC@depth=\count366
 \ALC@tlm=\skip91
 \algorithmicindent=\skip92
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 116.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count358
-\l__pdf_internal_box=\box87
+\l__color_backend_stack_int=\count367
+\l__pdf_internal_box=\box92
 ) (./derivatives.aux)
 \openout1 = `derivatives.aux'.
 
@@ -933,17 +1007,17 @@ LaTeX Font Info:    ... okay on input line 172.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count359
-\scratchdimen=\dimen317
-\scratchbox=\box88
-\nofMPsegments=\count360
-\nofMParguments=\count361
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count362
-\MPscratchDim=\dimen318
-\MPnumerator=\count363
-\makeMPintoPDFobject=\count364
-\everyMPtoPDFconversion=\toks57
+\scratchcounter=\count368
+\scratchdimen=\dimen330
+\scratchbox=\box93
+\nofMPsegments=\count369
+\nofMParguments=\count370
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count371
+\MPscratchDim=\dimen331
+\MPnumerator=\count372
+\makeMPintoPDFobject=\count373
+\everyMPtoPDFconversion=\toks59
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -962,7 +1036,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count365
+\c@section@level=\count374
 )
 LaTeX Info: Redefining \ref on input line 172.
 LaTeX Info: Redefining \pageref on input line 172.
@@ -1153,10 +1227,10 @@ Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 [3
 
 ]
-<figure/unnamed-chunk-4-1.pdf, id=36, 639.38875pt x 197.73875pt>
-File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
-<use figure/unnamed-chunk-4-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-4-1.pdf  used on input line 244.
+<figure/unnamed-chunk-5-1.pdf, id=36, 639.38875pt x 197.73875pt>
+File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+<use figure/unnamed-chunk-5-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-5-1.pdf  used on input line 244.
 (pdftex.def)             Requested size: 398.33891pt x 123.19115pt.
 
 Overfull \hbox (8.79997pt too wide) has occurred while \output is active
@@ -1165,7 +1239,7 @@ Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 
 [4
 
- <./figure/unnamed-chunk-4-1.pdf>]
+ <./figure/unnamed-chunk-5-1.pdf>]
 Overfull \hbox (7.2646pt too wide) in alignment at lines 263--263
  [] [] [] 
  []
@@ -1288,6 +1362,121 @@ Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 [20
 
 ]
+Overfull \hbox (8.79997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[21
+
+]
+Overfull \hbox (8.79997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[22
+
+]
+Overfull \hbox (8.79997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[23
+
+]
+Overfull \hbox (8.79997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[24
+
+]
+Overfull \hbox (8.79997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[25
+
+]
+Overfull \hbox (8.79997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[26
+
+]
+Overfull \hbox (8.79997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[27
+
+]
+Overfull \hbox (11.45677pt too wide) in paragraph at lines 923--923
+[][]  
+ []
+
+
+Overfull \hbox (8.79997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[28
+
+]
+Overfull \hbox (8.79997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[29
+
+]
+Overfull \hbox (5.13892pt too wide) in paragraph at lines 1076--1076
+[][]  
+ []
+
+
+Overfull \hbox (5.13892pt too wide) in paragraph at lines 1076--1076
+[][]  
+ []
+
+
+Overfull \hbox (5.13892pt too wide) in paragraph at lines 1076--1076
+[][]  
+ []
+
+
+Class beamer Warning: Frame text is shrunk by a factor of 9.70917 percent inste
+ad of 0 percent on input line 1076.
+
+
+Overfull \hbox (8.79997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[30
+
+]
+Overfull \hbox (8.79997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[31
+
+]
+Overfull \hbox (8.79997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[32
+
+]
+Overfull \hbox (8.79997pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[33
+
+]
 \tf@nav=\write5
 \openout5 = `derivatives.nav'.
 
@@ -1299,13 +1488,13 @@ Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 
 (./derivatives.aux) ) 
 Here is how much of TeX's memory you used:
- 26699 strings out of 478353
- 520563 string characters out of 5848085
- 800754 words of memory out of 5000000
- 44061 multiletter control sequences out of 15000+600000
- 483621 words of font info for 139 fonts, out of 8000000 for 9000
+ 29917 strings out of 478353
+ 596803 string characters out of 5848085
+ 916243 words of memory out of 5000000
+ 47175 multiletter control sequences out of 15000+600000
+ 484328 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,1008b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,15n,122p,1008b,861s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-
 mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/u
 sr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/t
@@ -1322,10 +1511,10 @@ nts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/
 public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/ams
 fonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb>
-Output written on derivatives.pdf (20 pages, 207453 bytes).
+Output written on derivatives.pdf (33 pages, 228881 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 334 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
+ 97 named destinations out of 1000 (max. 500000)
  49200 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -1,0 +1,382 @@
+## Swap
+
+### Interest rate swap
+
+Arrangement, applied to some notional principal, wherein interest at a predetermined fixed rate is exchanged for interest at a floating reference rate is exchanged for interest at a flating interest rate, with one or more regular exchanges being made for an agreed period of time
+
+```{=tex}
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+
+\draw   (0,10) -- (130,10) -- (130,50) -- (0,50) -- cycle ;
+\draw    (130,20) -- (250,20) ;
+\draw [shift={(250,20)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw    (250,40) -- (130,40) ;
+\draw [shift={(130,40)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw   (250,10) -- (380,10) -- (380,50) -- (250,50) -- cycle ;
+
+\draw (10,20) node [anchor=north west][inner sep=0.75pt]   [align=left] {fixed-rate payer};
+\draw (150,5) node [anchor=north west][inner sep=0.75pt]   [align=left] {fixed rate};
+\draw (150,40) node [anchor=north west][inner sep=0.75pt]   [align=left] {floating rate};
+\draw (260,20) node [anchor=north west][inner sep=0.75pt]   [align=left] {floating-rate payer};
+
+\end{tikzpicture}
+```
+
+------------------------------------------------------------------------
+
+### Overnight indexed swap
+
+Interest rate swap wherein a fixed rate of interest (the OIS rate) is exchanged for a reference rate of interest calculated from a realized overnight rate (e.g. SONIA, SOFR).
+
+-   If there is only one exchange, the OIS rate is a **risk-free zero rate** equivalent to the UL overnight rate.
+-   Otherwise, the OIS rates define a risk-free bond worth par.
+-   An OIS rate can be contrasted with a LIBOR swap, wherein the LIBOR rate for a period is known as the start of the period, so the floating rate of the first exchange is known.
+
+## Interest rate swaps: transferring liabilities
+
+Apple uses a swap to convert **floating**-rate borrowings to **fixed**-rate borrowings:
+
+\tikzset{every picture/.style={line width=0.75pt}}
+
+```{=tex}
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+
+\draw   (0,10) -- (80,10) -- (80,50) -- (0,50) -- cycle ;
+\draw    (80,20) -- (160,20) ;
+\draw [shift={(160,20)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw    (160,40) -- (80,40) ;
+\draw [shift={(80,40)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw   (160,10) -- (230,10) -- (230,50) -- (160,50) -- cycle ;
+\draw    (230,30) -- (320,30) ;
+\draw [shift={(320,30)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+
+\draw (12,22.9) node [anchor=north west][inner sep=0.75pt]   [align=left] {Citigroup};
+\draw (109.7,3) node [anchor=north west][inner sep=0.75pt]   [align=left] {3\%};
+\draw (102.7,44.33) node [anchor=north west][inner sep=0.75pt]   [align=left] {floating};
+\draw (175.03,22.23) node [anchor=north west][inner sep=0.75pt]   [align=left] {Apple};
+\draw (232,11.07) node [anchor=north west][inner sep=0.75pt]   [align=left] {floating + 1\%};
+
+\end{tikzpicture}
+```
+Intel uses a swap to convert **fixed**-rate borrowings to **floating**-rate borrowings:
+
+\tikzset{every picture/.style={line width=0.75pt}}
+
+```{=tex}
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+
+\draw   (0,10) -- (80,10) -- (80,50) -- (0,50) -- cycle ;
+\draw    (80,20) -- (160,20) ;
+\draw [shift={(80,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw    (160,40) -- (80,40) ;
+\draw [shift={(160,40)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw   (160,10) -- (230,10) -- (230,50) -- (160,50) -- cycle ;
+\draw    (230,30) -- (320,30) ;
+\draw [shift={(320,30)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+
+\draw (12,22.9) node [anchor=north west][inner sep=0.75pt]   [align=left] {Citigroup};
+\draw (109.7,3) node [anchor=north west][inner sep=0.75pt]   [align=left] {2.97\%};
+\draw (102.7,44.33) node [anchor=north west][inner sep=0.75pt]   [align=left] {floating};
+\draw (175.03,22.23) node [anchor=north west][inner sep=0.75pt]   [align=left] {Intel};
+\draw (232,11.07) node [anchor=north west][inner sep=0.75pt]   [align=left] {3.2\%};
+
+\end{tikzpicture}
+```
+## Interest rate swaps: transferring assets
+
+Apple converts a **fixed**-rate investment to **floating**-rate investment:
+
+\tikzset{every picture/.style={line width=0.75pt}}
+
+```{=tex}
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+
+\draw   (0,10) -- (80,10) -- (80,50) -- (0,50) -- cycle ;
+\draw    (80,20) -- (160,20) ;
+\draw [shift={(160,20)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw    (160,40) -- (80,40) ;
+\draw [shift={(80,40)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw   (160,10) -- (230,10) -- (230,50) -- (160,50) -- cycle ;
+\draw    (230,30) -- (320,30) ;
+\draw [shift={(230,30)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+
+\draw (12,22.9) node [anchor=north west][inner sep=0.75pt]   [align=left] {Citigroup};
+\draw (109.7,3) node [anchor=north west][inner sep=0.75pt]   [align=left] {3\%};
+\draw (102.7,44.33) node [anchor=north west][inner sep=0.75pt]   [align=left] {floating};
+\draw (175.03,22.23) node [anchor=north west][inner sep=0.75pt]   [align=left] {Apple};
+\draw (232,11.07) node [anchor=north west][inner sep=0.75pt]   [align=left] {2.7\%};
+
+\end{tikzpicture}
+```
+Intel converts a **floating**-rate investment to **fixed**-rate investment:
+
+\tikzset{every picture/.style={line width=0.75pt}}
+
+```{=tex}
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+
+\draw   (0,10) -- (80,10) -- (80,50) -- (0,50) -- cycle ;
+\draw    (80,20) -- (160,20) ;
+\draw [shift={(80,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw    (160,40) -- (80,40) ;
+\draw [shift={(160,40)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw   (160,10) -- (230,10) -- (230,50) -- (160,50) -- cycle ;
+\draw    (230,30) -- (320,30) ;
+\draw [shift={(230,30)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+
+\draw (12,22.9) node [anchor=north west][inner sep=0.75pt]   [align=left] {Citigroup};
+\draw (109.7,3) node [anchor=north west][inner sep=0.75pt]   [align=left] {2.97\%};
+\draw (102.7,44.33) node [anchor=north west][inner sep=0.75pt]   [align=left] {floating};
+\draw (175.03,22.23) node [anchor=north west][inner sep=0.75pt]   [align=left] {Intel};
+\draw (232,11.07) node [anchor=north west][inner sep=0.75pt]   [align=left] {floating - 0.2\%};
+
+\end{tikzpicture}
+```
+## Comparative advantage
+
+Why use swaps? One reason might be **comparative advantage**: a company might have a relative advantage to borrowing in either fixed-rate markets or floating-rate markets.
+
+|         | fixed rate | floating rate   |
+|---------|------------|-----------------|
+| AAACorp | 4.0%       | floating - 0.1% |
+| BBBCorp | 5.2%       | floating + 0.6% |
+
+Here, AAACorp and BBBCorp might seek to collaborate:
+
+```{=tex}
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+
+\draw   (75,10) -- (149,10) -- (149,50) -- (75,50) -- cycle ;
+\draw    (151.37,20) -- (224,20.33) ;
+\draw [shift={(226,20.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (224,39.34) -- (152.03,39.98) ;
+\draw [shift={(150.03,40)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw   (225.73,9.07) -- (297,9.07) -- (297,50) -- (225.73,50) -- cycle ;
+\draw    (300,31) -- (388,31.33) ;
+\draw [shift={(390,31.34)}, rotate = 180.21] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (75,31.34) -- (3.03,31.98) ;
+\draw [shift={(1.03,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+
+\draw (80,21.9) node [anchor=north west][inner sep=0.75pt]   [align=left] {AAACorp};
+\draw (176.7,2) node [anchor=north west][inner sep=0.75pt]   [align=left] {4.35\%};
+\draw (169.7,43.33) node [anchor=north west][inner sep=0.75pt]   [align=left] {floating};
+\draw (228,23.34) node [anchor=north west][inner sep=0.75pt]   [align=left] {BBBCorp};
+\draw (299,12.07) node [anchor=north west][inner sep=0.75pt]   [align=left] {floating + 0.6\%};
+\draw (32.7,32.33) node [anchor=north west][inner sep=0.75pt]   [align=left] {4\%};
+
+
+\end{tikzpicture}
+```
+
+------------------------------------------------------------------------
+
+In practice, the swap might be **brokered** by a financial institution:
+
+```{=tex}
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+
+\draw   (75,10) -- (149,10) -- (149,50) -- (75,50) -- cycle ;
+\draw    (151.37,38) -- (224,38.33) ;
+\draw [shift={(226,38.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (220,19.34) -- (150.03,20) ;
+\draw [shift={(148.03,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw   (370.73,7.07) -- (445,7.07) -- (445,48) -- (370.73,48) -- cycle ;
+\draw    (445.37,29) -- (505,29.22) -- (536,29.33) ;
+\draw [shift={(538,30)}, rotate = 180.21] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (75,31.34) -- (3.03,31.98) ;
+\draw [shift={(1.03,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw  [fill={rgb, 255:red, 1; green, 233; blue, 1 }  ,fill opacity=1 ] (224,6.73) -- (298,6.73) -- (298,47.67) -- (224,47.67) -- cycle ;
+\draw    (300,36) -- (370,36.33) ;
+\draw [shift={(375,36.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (371,17.34) -- (299.03,17.98) ;
+\draw [shift={(300,18)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+
+\draw (80,21.9) node [anchor=north west][inner sep=0.75pt]   [align=left] {AAACorp};
+\draw (176.7,2) node [anchor=north west][inner sep=0.75pt]   [align=left] {4.33\%};
+\draw (165.7,42.33) node [anchor=north west][inner sep=0.75pt]   [align=left] {floating};
+\draw (376,21.34) node [anchor=north west][inner sep=0.75pt]   [align=left] {BBBCorp};
+\draw (447,10.07) node [anchor=north west][inner sep=0.75pt]   [align=left] {floating + 0.6\%};
+\draw (32.7,32.33) node [anchor=north west][inner sep=0.75pt]   [align=left] {4\%};
+\draw (226,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {Financial\\Institution};
+\draw (325.7,0) node [anchor=north west][inner sep=0.75pt]   [align=left] {4.37\%};
+\draw (314.7,40.33) node [anchor=north west][inner sep=0.75pt]   [align=left] {floating};
+
+
+\end{tikzpicture}
+```
+
+
+Why has comparative advantage not been arbitraged away?
+
+
+The **maturities** of contracts available via fixed-rate financing are generally different than those available via floating-rate financing:
+
+-   Fixed-rate contracts are often longer than floating-rate contracts
+-   The spread over the reference rate can effectively be adjusted by floating-rate lenders
+-   Fixed-rate lenders often lack this option
+
+
+## Currency swaps
+
+**fixed-for-fixed currency swap**: arrangement wherein principal and interest payments in one currency are exchanged for principal and interest payments in another currency
+
+```{=tex}
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+
+\draw   (0,10) -- (130,10) -- (130,50) -- (0,50) -- cycle ;
+\draw    (130,20) -- (250,20) ;
+\draw [shift={(250,20)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw    (250,40) -- (130,40) ;
+\draw [shift={(130,40)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw   (250,10) -- (380,10) -- (380,50) -- (250,50) -- cycle ;
+
+\draw (10,20) node [anchor=north west][inner sep=0.75pt]   [align=left] {Barclays};
+\draw (150,5) node [anchor=north west][inner sep=0.75pt]   [align=left] {USD 3.0\%};
+\draw (150,40) node [anchor=north west][inner sep=0.75pt]   [align=left] {GBP 4.0\%};
+\draw (260,20) node [anchor=north west][inner sep=0.75pt]   [align=left] {British Petroleum};
+
+\end{tikzpicture}
+```
+    
+Variations:
+
+-   fixed-for-floating currency swap
+-   floating-for-floating currency swap
+-   quanto (or diff swap): arrangement wherein a rate observed in one currency is applied to a principal amount in another currency
+
+## Currency swaps: example with comparative advantage {.shrink}
+
+Suppose that General Electric has a **comparative advantage** to borrowing in USD and Qantas Airways has a **comparative advantage** to borrowing in AUD. Financial institution could reduce both of their costs by taking on FX risk:
+
+
+```{=tex}
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+
+\draw   (75,10) -- (149,10) -- (149,50) -- (75,50) -- cycle ;
+\draw    (151.37,38) -- (224,38.33) ;
+\draw [shift={(226,38.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (220,19.34) -- (150.03,20) ;
+\draw [shift={(148.03,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw   (370.73,7.07) -- (445,7.07) -- (445,48) -- (370.73,48) -- cycle ;
+\draw    (445.37,29) -- (505,29.22) -- (536,29.33) ;
+\draw [shift={(538,30)}, rotate = 180.21] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (75,31.34) -- (3.03,31.98) ;
+\draw [shift={(1.03,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw  [fill={rgb, 255:red, 1; green, 233; blue, 1 }  ,fill opacity=1 ] (224,6.73) -- (298,6.73) -- (298,47.67) -- (224,47.67) -- cycle ;
+\draw    (300,36) -- (370,36.33) ;
+\draw [shift={(375,36.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (371,17.34) -- (299.03,17.98) ;
+\draw [shift={(300,18)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+
+\draw (80,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {General\\Electric};
+\draw (380,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {Qantas\\Airways};
+\draw (230,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {Financial\\Institution};
+
+\draw (10,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {USD 5.0\%};
+
+\draw (150,0) node [anchor=north west][inner sep=0.75pt]   [align=left] {USD 5.0\%};
+\draw (150,40) node [anchor=north west][inner sep=0.75pt]   [align=left] {AUD 6.9\%};
+
+\draw (300,0) node [anchor=north west][inner sep=0.75pt]   [align=left] {USD 6.3\%};
+\draw (300,40) node [anchor=north west][inner sep=0.75pt]   [align=left] {AUD 8.0\%};
+
+\draw (450,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {AUD 8.0\%};
+
+\end{tikzpicture}
+```
+
+
+It might be more cost-effective for Quantas Airways to bear some FX risk:
+
+
+```{=tex}
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+
+\draw   (75,10) -- (149,10) -- (149,50) -- (75,50) -- cycle ;
+\draw    (151.37,38) -- (224,38.33) ;
+\draw [shift={(226,38.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (220,19.34) -- (150.03,20) ;
+\draw [shift={(148.03,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw   (370.73,7.07) -- (445,7.07) -- (445,48) -- (370.73,48) -- cycle ;
+\draw    (445.37,29) -- (505,29.22) -- (536,29.33) ;
+\draw [shift={(538,30)}, rotate = 180.21] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (75,31.34) -- (3.03,31.98) ;
+\draw [shift={(1.03,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw  [fill={rgb, 255:red, 1; green, 233; blue, 1 }  ,fill opacity=1 ] (224,6.73) -- (298,6.73) -- (298,47.67) -- (224,47.67) -- cycle ;
+\draw    (300,36) -- (370,36.33) ;
+\draw [shift={(375,36.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (371,17.34) -- (299.03,17.98) ;
+\draw [shift={(300,18)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+
+\draw (80,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {General\\Electric};
+\draw (380,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {Qantas\\Airways};
+\draw (230,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {Financial\\Institution};
+
+\draw (10,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {USD 5.0\%};
+
+\draw (150,0) node [anchor=north west][inner sep=0.75pt]   [align=left] {USD 5.0\%};
+\draw (150,40) node [anchor=north west][inner sep=0.75pt]   [align=left] {AUD 6.9\%};
+
+\draw (300,0) node [anchor=north west][inner sep=0.75pt]   [align=left] {USD 5.2\%};
+\draw (300,40) node [anchor=north west][inner sep=0.75pt]   [align=left] {AUD 6.9\%};
+
+\draw (450,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {AUD 8.0\%};
+
+\end{tikzpicture}
+```
+
+
+Or it might be more cost-effective for General Electric to bear some FX risk:
+
+
+```{=tex}
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+
+\draw   (75,10) -- (149,10) -- (149,50) -- (75,50) -- cycle ;
+\draw    (151.37,38) -- (224,38.33) ;
+\draw [shift={(226,38.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (220,19.34) -- (150.03,20) ;
+\draw [shift={(148.03,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw   (370.73,7.07) -- (445,7.07) -- (445,48) -- (370.73,48) -- cycle ;
+\draw    (445.37,29) -- (505,29.22) -- (536,29.33) ;
+\draw [shift={(538,30)}, rotate = 180.21] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (75,31.34) -- (3.03,31.98) ;
+\draw [shift={(1.03,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw  [fill={rgb, 255:red, 1; green, 233; blue, 1 }  ,fill opacity=1 ] (224,6.73) -- (298,6.73) -- (298,47.67) -- (224,47.67) -- cycle ;
+\draw    (300,36) -- (370,36.33) ;
+\draw [shift={(375,36.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (371,17.34) -- (299.03,17.98) ;
+\draw [shift={(300,18)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+
+\draw (80,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {General\\Electric};
+\draw (380,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {Qantas\\Airways};
+\draw (230,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {Financial\\Institution};
+
+\draw (10,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {USD 5.0\%};
+
+\draw (150,0) node [anchor=north west][inner sep=0.75pt]   [align=left] {USD 6.1\%};
+\draw (150,40) node [anchor=north west][inner sep=0.75pt]   [align=left] {AUD 8.0\%};
+
+\draw (300,0) node [anchor=north west][inner sep=0.75pt]   [align=left] {USD 6.3\%};
+\draw (300,40) node [anchor=north west][inner sep=0.75pt]   [align=left] {AUD 8.0\%};
+
+\draw (450,10) node [anchor=north west][inner sep=0.75pt]   [align=left] {AUD 8.0\%};
+
+\end{tikzpicture}
+```
+
+
+## Other swaps
+
+**Equity swap**: agreement to exchange the total return (dividends plus gains) of an equity index for a fixed for floating rate of interest.
+
+**Credit default swap**: agreement that generates a payment if a particular company (the reference entity) defaults
+
+- the **protection buyer** pays the **CDS spread** (and insurance premium) over the life of the contract
+- in the event of default, the **protection seller** pays an amount that would restore the value of the hypothetical portfolio of the bonds of the reference entity to the value of its principal
+
+Options:
+
+- entendable swap: one party can extend the swap arrangement
+- puttable swap: one party can terminate the swap arrangement early
+- swaption: option on a swap

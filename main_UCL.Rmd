@@ -60,6 +60,9 @@ opts_chunk$set(
 ```{r child = 'sessions/forward.Rmd', eval=TRUE}
 ```
 
+```{r child = 'sessions/swap.Rmd', eval=TRUE}
+```
+
 
 ## Thank you!
 
