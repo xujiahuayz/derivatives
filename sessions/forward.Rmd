@@ -4,6 +4,24 @@ A forward is
 
 -   an OTC (over-the-counter) contract in which two counterparties agree, with zero money down, to buy / sell the UCL at a pre-agreed *forward price* at a given *delivery date* in the future
 
+
+The contract is an *obligation* of both parties to transact, designed to protect both the buyer and the seller from price fluctuations in the future.
+
+## Investment assets and consumption assets
+
+**Investment asset**: asset normally held for investment purposes
+
+- financial assets: stocks, bonds
+- precious metal: gold, silver
+
+**consumption asset**: asset NOT normally held for investment purposes
+
+- industrial metals: copper, aluminium
+- agricultural products: orange juice, pork bellies
+- energy products: natural gas, heating oil
+
+---
+
 ### Example
 
 a forward contract to exchange 1m barrels of crude oil in 3 months at a forward price of USD 95/barrel
@@ -76,44 +94,6 @@ points(1, 0, pty = 3, col = 'red')
 text(1+0.1, 0-0.1, label = '$F$')
 ```
 
-## Forwards vs Futures
-
-Futures are **exchange-traded** version of forwards
-
-|                          | **Forwards**       | **Futures**                               |
-|--------------------------|--------------------|-------------------------------------------|
-| Buyer-seller interaction | Direct             | Via exchange                              |
-| Default-risk borne by    | Individual parties | Exchange                                  |
-| Default controlled by    | Collateral         | Margin accounts daily "marking to market" |
-| Contract terms           | Tailored           | Standardized                              |
-| Unilateral reversal      | Difficult          | Easy                                      |
-
-## E-mini S&P500 Index Futures Contract
-
-Most popular equity index futures contract in the world
-
--   **Contract size**: \$50 $\times$ S&P500 Index price (0.2 of the standard S&P500 futures contract)
--   **Contract month**: March quarterly expiration cycle (Mar, Jun, Sep, Dec)
--   **Trading hours**: CME Globex (essentially around the clock from Sunday evening to late Friday afternoon)
--   **Trading termination**: 8.30am on the Settlement Date (3rd Friday of the contract month)
--   **Settlement procedure**: Cash settlement based on the Special Opening Quotation on Friday morning of the S&P500 Index
--   **Position limits**: 20,000 S&P500 contracts or equivalent net long or short in all contract months combined
-
-## Futures contracts - marking to market
-
--   Similar economic effect to forwards, but, due to **marking to market**, gains and losses on futures positions are settled each day
-
--   After **marking to market**, both sides have a zero value position with the new (end of day) futures price.
-
--   The long receives from (pays to) the short any increase (decrease) in the futures price from the previous day
-
-| Date          | 0   | 1         | 2          | 3         | $T=4$     |
-|---------------|-----|-----------|------------|-----------|-----------|
-| Future price  | 106 | 108       | 104        | 105       | $S_T=107$ |
-| Long receives | 0   | 108-106=2 | 104-108=-4 | 105-104=1 | 107-105=2 |
-
--   Note that $\sum(\text{cash flow long receives}) = 1$, equal to the payoff on a forward position where the forward price is the original futures price $S_T - F = 107-106 = 1$
-
 ## Fair forward price
 
 -   Consider a stock
@@ -176,7 +156,8 @@ For assets that can be traded spot and stored, forwards futures prices are linke
 
 $$
 F = S \times (1+r_j)^T - FV(\text{holding benefits}) + FV(\text{holding costs})
-$$ where
+$$ 
+where
 
 $F$: forward price
 
@@ -189,6 +170,104 @@ $T$: maturity of the contract
 Holding benefits (costs) are the benefits (costs), typically cashflows, associated with holding the UL that you miss when buying in the future compared to buying now
 
 $FV$: future value, i.e. compounded to $T$ at risk-free rate
+
+
+## Futures
+
+**Future contract**: fungible, standardized contract for delivery of a specific commodity at a specific delivery or maturity date for an agreed-upon price (the **futures price**), to be paid at contract maturity
+
+**Future market**: market for trading **futures contracts** wherein buyers and sellers in a centralized futures exchange (wherein some flexibility is sacrificed for **liquidity**)
+
+---
+
+The **futures exchange** establishes features of the contract:
+
+- **size** of the contract: mass, volume, number of units
+- acceptable **grade** of the commodity
+- contract **delivery dates**
+- nature of **settlement**: cash, warehouse receipts
+
+The trader with the **long position** (the buyer) commits to purchasing the commodity on the delivery date.
+
+The trader with the **short position** (the seller) delivering the commodity on the delivery date.
+
+
+## Forwards vs Futures
+
+Futures are **exchange-traded** version of forwards
+
+|                          | **Forwards**       | **Futures**                               |
+|--------------------------|--------------------|-------------------------------------------|
+| Buyer-seller interaction | Direct             | Via exchange                              |
+| Default-risk borne by    | Individual parties | Exchange                                  |
+| Default controlled by    | Collateral         | Margin accounts daily "marking to market" |
+| Contract terms           | Tailored           | Standardized                              |
+| Unilateral reversal      | Difficult          | Easy                                      |
+
+## E-mini S&P500 Index Futures Contract
+
+Most popular equity index futures contract in the world
+
+-   **Contract size**: \$50 $\times$ S&P500 Index price (0.2 of the standard S&P500 futures contract)
+-   **Contract month**: March quarterly expiration cycle (Mar, Jun, Sep, Dec)
+-   **Trading hours**: CME Globex (essentially around the clock from Sunday evening to late Friday afternoon)
+-   **Trading termination**: 8.30am on the Settlement Date (3rd Friday of the contract month)
+-   **Settlement procedure**: Cash settlement based on the Special Opening Quotation on Friday morning of the S&P500 Index
+-   **Position limits**: 20,000 S&P500 contracts or equivalent net long or short in all contract months combined
+
+## Futures contracts - marking to market
+
+-   Similar economic effect to forwards, but, due to **marking to market**, gains and losses on futures positions are settled each day
+
+-   After **marking to market**, both sides have a zero value position with the new (end of day) futures price.
+
+-   The long receives from (pays to) the short any increase (decrease) in the futures price from the previous day
+
+| Date          | 0   | 1         | 2          | 3         | $T=4$     |
+|---------------|-----|-----------|------------|-----------|-----------|
+| Future price  | 106 | 108       | 104        | 105       | $S_T=107$ |
+| Long receives | 0   | 108-106=2 | 104-108=-4 | 105-104=1 | 107-105=2 |
+
+-   Note that $\sum(\text{cash flow long receives}) = 1$, equal to the payoff on a forward position where the forward price is the original futures price $S_T - F = 107-106 = 1$
+- **Convergence property**: at maturity, the futures price and spot price must converge; $F_T=P_T$
+
+
+## The clearinghouse
+
+**Clearinghouse**: designated intermediary between a buyer and a seller in a financial market that validates and finalizes the transaction, ensuring that both the buyer and the seller honour their contractual obligations.
+
+- Traders on both sides face the **clearinghouse** rather than each other.
+- The **clearinghouse** bears the risk of non-performance by any trader.
+- Contracts are therefore **fungible**: traders can reverse a position by entering the countervailing position with the clearinghouse.
+
+## Margin and open interest
+
+**Margin**: a good-faith deposit to guarantee contract performance
+
+**Marking to market**: daily settling (realizing) of gains and losses with the clearinghouse [note special tax treatment]
+
+**Maintenance margin**: minimum quantity that a trader must hold in reserve with the clearinghouse
+
+- Margin safeguards the position of the clearninghouse.
+- If the mark-to-market value of the trader's account falls below the maintenance margin, the trader receives a **margin call**.
+- A **margin call** requires the trader to replenish the margin account to the maintenance margin. Otherwise, the position is reduced to a size commensurate with the remaining funds (the trader is **bought in** by the exchange).
+
+**Open interest**: the number of contracts outstanding
+
+- The position of the clearinghouse always nets out to zero.
+
+## Hedging and speculation
+
+**Hedgers** use futures to insulate themselves (**hedge**) against price movements in the underlying asset.
+
+- Example: both airplane manufacturers and bauxite miners might seek to hedge their exposure to the price of aluminium.
+
+**Speculators** use futures to profit from movements in futures prices.
+
+- Speculators take **long** position if they expect an increase in price and a **short** position if they expect a decrease in price.
+- Usually, **transaction costs** in future markets are considerably smaller than in markets for the UL.
+- Speculators also gain the advantage of **leverage** because margin requirements are generally much less than the value of the UL.
+
 
 ## Forward and future -- applications
 
@@ -213,6 +292,7 @@ In addition:
 -   the buyer pays the seller daily interst on the initial value of the UL
 -   the seller pays the buyer any dividends / coupons on the underlying
 -   margin requirements for end user
+
 
 ## CFDs vs forwards & futures
 
@@ -318,3 +398,60 @@ Commodities as an asset class
 - hedge against inflation ("real return" asset class)
 - exposure to emerging markets growth ("commodities super cycle")
 - strong performance (relative to equities) during 2000-2007
+
+## Interest rate futures: convexity adjustment
+
+For **interest rate futures** longer than about two years, factors related to settlement influence the value of the contracts:
+
+- Traders will tend to invest the proceeds from **daily settlement** at prevailing rates, so futures contracts for which there is a mark-to-market gain from an increase in rates (or loss from a decrease in rates) will outperform similar forward contracts
+- **Eurobond** futures are settled at the beginning of the period to which the rate applies, calculated as the present value of what the settlement would be if it were made at the end of the period, and the adverse impact of delaying settlement on holders of forward contracts is greater when there is a gain
+
+So:
+
+$$\text{forward rate} =  \text{future rate} - c$$
+
+where $c > 0$ is the convexity adjustment
+
+
+## Interest rate futures: estimating forward interest rates
+
+interest rate futures can be used to bootstrap zero curves (e.g. SONIA):
+
+$$
+R_F = \frac{R_2T_2 - R_1T_1}{T_2 - T_1}
+$$
+
+$$
+R_2 = \frac{R_F (T_2 - T_1) + R_1 T_1}{T_2}
+$$
+
+## Interest rate futures: duration-based hedging
+
+If we assume that the change in forward yield $\Delta y$ is the same for all maturities, then:
+
+$$
+\Delta P = -PD_P\Delta y
+$$
+
+$$
+\Delta V_F = -V_F D_F \Delta y
+$$
+
+$$
+N^* = \frac{P D_P}{V_F D_F}
+$$
+
+
+$V_F$: contract price for one interest rate futures contrast
+
+$D_F$: duration of underlying asset at maturity of the futures contract
+
+$P$: forward value of the portfolio being hedged at maturity of the hedge (often assumed to be the same as the initial value of the portfolio)
+
+$D_P$: duration of the portfolio at the maturity of the hedge
+
+$N^*$: **duration-based hedge ratio**, the optimal number of contracts to hedge against uncertain $\Delta y$
+
+
+
+
