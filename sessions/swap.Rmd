@@ -24,9 +24,9 @@ Arrangement, applied to some notional principal, wherein interest at a predeterm
 
 ------------------------------------------------------------------------
 
-### Overnight indexed swap
+### Overnight indexed swap (OIS)
 
-Interest rate swap wherein a fixed rate of interest (the OIS rate) is exchanged for a reference rate of interest calculated from a realized overnight rate (e.g. SONIA, SOFR).
+Interest rate swap wherein a fixed rate of interest (the OIS rate) is exchanged for a reference rate of interest calculated from a realized overnight rate (e.g. SONIA).
 
 -   If there is only one exchange, the OIS rate is a **risk-free zero rate** equivalent to the UL overnight rate.
 -   Otherwise, the OIS rates define a risk-free bond worth par.
