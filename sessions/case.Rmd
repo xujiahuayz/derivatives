@@ -1,0 +1,10 @@
+# Premier Foods PLC
+
+- What general information can we extract from Premier's financial statement?
+- What are interest rate swaps and why do firms issue them?
+- What is the value to Premier of its fixed / floating short-term interest rate swaps?
+- What are interest rate caps and floors? What motivate a firm to buy a cap? To sell a floor? Why do you think these instruments are often issued in conjunction (i.e. a firm buys a cap and writes a floor, forming a "collar"), as in Premier's case?
+- What is the value of Premier's cap? What is the value of its floor? You will need to refer to the LIBOR swap curve and the LIBOR implied forward curve?
+- Should a hedge fund buy 5 per cent of Premier?
+
+

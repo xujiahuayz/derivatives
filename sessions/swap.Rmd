@@ -355,7 +355,7 @@ Or it might be more cost-effective for General Electric to bear some FX risk:
 ```
 ## Other swaps
 
-**Equity swap**: agreement to exchange the total return (dividends plus gains) of an equity index for a fixed for floating rate of interest.
+**Equity swap**: agreement to exchange the total return (dividends plus gains) of an equity index for a fixed or floating rate of interest.
 
 **Credit default swap**: agreement that generates a payment if a particular company (the reference entity) defaults
 
