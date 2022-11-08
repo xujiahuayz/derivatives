@@ -200,6 +200,15 @@ Futures are **exchange-traded** version of forwards
 | Contract terms           | Tailored           | Standardized                              |
 | Unilateral reversal      | Difficult          | Easy                                      |
 
+
+## The clearinghouse
+
+**Clearinghouse**: designated intermediary between a buyer and a seller in a financial market that validates and finalizes the transaction, ensuring that both the buyer and the seller honor their contractual obligations.
+
+-   Traders on both sides face the **clearinghouse** rather than each other.
+-   The **clearinghouse** bears the risk of non-performance by any trader.
+-   Contracts are therefore **fungible**: traders can reverse a position by entering the countervailing position with the clearinghouse.
+
 ## E-mini S&P500 Index Futures Contract
 
 Most popular equity index futures contract in the world
@@ -219,27 +228,19 @@ Most popular equity index futures contract in the world
 
 -   The long receives from (pays to) the short any increase (decrease) in the futures price from the previous day
 
-| Date          | 0   | 1         | 2          | 3         | $T=4$     |
-|---------------|-----|-----------|------------|-----------|-----------|
-| Future price  | 106 | 108       | 104        | 105       | $S_T=107$ |
-| Long receives | 0   | 108-106=2 | 104-108=-4 | 105-104=1 | 107-105=2 |
+| Date          | 0     | 1           | 2            | 3           | $T=4$       |
+|---------------|-------|-------------|--------------|-------------|-------------|
+| Future price  | $106$ | $108$       | $104$        | $105$       | $S_T=107$   |
+| Long receives | $0$   | $108-106=2$ | $104-108=-4$ | $105-104=1$ | $107-105=2$ |
 
 -   Note that $\sum(\text{cash flow long receives}) = 1$, equal to the payoff on a forward position where the forward price is the original futures price $S_T - F = 107-106 = 1$
 -   **Convergence property**: at maturity, the futures price and spot price must converge; $F_T=P_T$
-
-## The clearinghouse
-
-**Clearinghouse**: designated intermediary between a buyer and a seller in a financial market that validates and finalizes the transaction, ensuring that both the buyer and the seller honor their contractual obligations.
-
--   Traders on both sides face the **clearinghouse** rather than each other.
--   The **clearinghouse** bears the risk of non-performance by any trader.
--   Contracts are therefore **fungible**: traders can reverse a position by entering the countervailing position with the clearinghouse.
 
 ## Margin and open interest
 
 **Margin**: a good-faith deposit to guarantee contract performance
 
-**Marking to market**: daily settling (realizing) of gains and losses with the clearinghouse \[note special tax treatment\]
+**Marking to market**: daily settling (realizing) of gains and losses with the clearinghouse 
 
 **Maintenance margin**: minimum quantity that a trader must hold in reserve with the clearinghouse
 
@@ -263,36 +264,36 @@ Most popular equity index futures contract in the world
 -   Usually, **transaction costs** in future markets are considerably smaller than in markets for the UL.
 -   Speculators also gain the advantage of **leverage** because margin requirements are generally much less than the value of the UL.
 
-## Forward and future -- applications
+<!-- ## Forward and future -- applications -->
 
--   Contracts for difference (CFDs)
--   Profitable alpha (futures overlay) strategies
--   Commodities investing
+<!-- -   Contracts for difference (CFDs) -->
+<!-- -   Profitable alpha (futures overlay) strategies -->
+<!-- -   Commodities investing -->
 
-## Contracts for difference (CFDs)
+<!-- ## Contracts for difference (CFDs) -->
 
-A CFD is a contract between a buyer and a seller, stipulating that:
+<!-- A CFD is a contract between a buyer and a seller, stipulating that: -->
 
--   if the price of the UL increases, the seller pays the buyer the increase
--   if the price falls, the buyer pays the seller the decrease
+<!-- -   if the price of the UL increases, the seller pays the buyer the increase -->
+<!-- -   if the price falls, the buyer pays the seller the decrease -->
 
-| Cashflows             | Today | $T$     |
-|-----------------------|-------|---------|
-| to CFD buyer (long)   | 0     | $S_T-S$ |
-| to CFD seller (short) | 0     | $S-S_T$ |
+<!-- | Cashflows             | Today | $T$     | -->
+<!-- |-----------------------|-------|---------| -->
+<!-- | to CFD buyer (long)   | 0     | $S_T-S$ | -->
+<!-- | to CFD seller (short) | 0     | $S-S_T$ | -->
 
-In addition:
+<!-- In addition: -->
 
--   the buyer pays the seller daily interest on the initial value of the UL
--   the seller pays the buyer any dividends / coupons on the underlying
--   margin requirements for end user
+<!-- -   the buyer pays the seller daily interest on the initial value of the UL -->
+<!-- -   the seller pays the buyer any dividends / coupons on the underlying -->
+<!-- -   margin requirements for end user -->
 
-## CFDs vs forwards & futures
+<!-- ## CFDs vs forwards & futures -->
 
-| Cashflows             | Today | From today to $T$ | $T$     |
-|-----------------------|-------|-------------------|---------|
-| to CFD buyer (long)   | 0     | interest on $S$   | $S_T-S$ |
-| to CFD seller (short) | 0     | 0                 | $S-S_T$ |
+<!-- | Cashflows             | Today | From today to $T$ | $T$     | -->
+<!-- |-----------------------|-------|-------------------|---------| -->
+<!-- | to CFD buyer (long)   | 0     | interest on $S$   | $S_T-S$ | -->
+<!-- | to CFD seller (short) | 0     | 0                 | $S-S_T$ | -->
 
 ## Is the forward price the expected spot price?
 
@@ -319,49 +320,49 @@ therefore $F \neq \mathbb{E}[S_T]$
 
 -   By going long (short) forwards / futures you assume (lay off) the risk premium on the UL
 
-## Portable alpha strategies
+<!-- ## Portable alpha strategies -->
 
--   According to the CAPM, the risk premium on a stock or portfolio is:
+<!-- -   According to the CAPM, the risk premium on a stock or portfolio is: -->
 
-$\mathbb{E}(R_i) - R_f = \beta[\mathbb{E}(R_m) - R_f]$ where $\beta = \frac{\sigma_{R_i,R_m}}{\sigma^2_{R_m}}$
+<!-- $\mathbb{E}(R_i) - R_f = \beta[\mathbb{E}(R_m) - R_f]$ where $\beta = \frac{\sigma_{R_i,R_m}}{\sigma^2_{R_m}}$ -->
 
-where:
+<!-- where: -->
 
-$R_i,R_m$: the returns on the portfolio and the "market", respectively
+<!-- $R_i,R_m$: the returns on the portfolio and the "market", respectively -->
 
-$R_f$: the risk-free rate of return
+<!-- $R_f$: the risk-free rate of return -->
 
-$\mathbb{E}[]$: expected value
+<!-- $\mathbb{E}[]$: expected value -->
 
-$\sigma_{R_i,R_m}$: the covariance between $R_i$ and $R_m$
+<!-- $\sigma_{R_i,R_m}$: the covariance between $R_i$ and $R_m$ -->
 
-$\sigma^2_{R_m}$: the variance of $R_m$
+<!-- $\sigma^2_{R_m}$: the variance of $R_m$ -->
 
--   The expected excess return on a stock is compensation for taking on (non-diversifiable) "market" risk
+<!-- -   The expected excess return on a stock is compensation for taking on (non-diversifiable) "market" risk -->
 
-------------------------------------------------------------------------
+<!-- ------------------------------------------------------------------------ -->
 
-If you run the regression:
+<!-- If you run the regression: -->
 
-$$
-R_i - R_f = \alpha + \beta (R_m - R_f)  + \epsilon
-$$
+<!-- $$ -->
+<!-- R_i - R_f = \alpha + \beta (R_m - R_f)  + \epsilon -->
+<!-- $$ -->
 
-and securities are efficiently priced, alpha should not be statistically significantly different from zero
+<!-- and securities are efficiently priced, alpha should not be statistically significantly different from zero -->
 
--   For actively managed portfolios, if alpha is positive this is typically interpreted as evidence of stock-picking ability
+<!-- -   For actively managed portfolios, if alpha is positive this is typically interpreted as evidence of stock-picking ability -->
 
-------------------------------------------------------------------------
+<!-- ------------------------------------------------------------------------ -->
 
-Use futures overlays to create a position where you earn beta in one asset category and alpha in another:
+<!-- Use futures overlays to create a position where you earn beta in one asset category and alpha in another: -->
 
--   You have £1m to invest and a target beta of 1 wrt the S&P500
--   You believe there are no alpha opportunities in S&P500 stocks but you have identified a market-neutral (zero-beta) hedge fund that you believe will generate positive alpha
+<!-- -   You have £1m to invest and a target beta of 1 wrt the S&P500 -->
+<!-- -   You believe there are no alpha opportunities in S&P500 stocks but you have identified a market-neutral (zero-beta) hedge fund that you believe will generate positive alpha -->
 
-To capture the S&P beta return as well as the hedge fund alpha:
+<!-- To capture the S&P beta return as well as the hedge fund alpha: -->
 
--   invest £1m in the "market-neutral" hedge fund
--   go long £1m 1-yr S&P500 futures
+<!-- -   invest £1m in the "market-neutral" hedge fund -->
+<!-- -   go long £1m 1-yr S&P500 futures -->
 
 ## Commodity forwards / futures pricing
 

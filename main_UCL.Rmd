@@ -85,7 +85,7 @@ UCL Centre for Blockchain Technologies
 
 jiahua.xu@ucl.ac.uk
 
-## References {.allowframebreaks}
-\small
+<!-- ## References {.allowframebreaks} -->
+<!-- \small -->
 
 \widowpenalties 1 0
