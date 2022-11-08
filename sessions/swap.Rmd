@@ -21,16 +21,17 @@ Arrangement, applied to some notional principal, wherein interest at a predeterm
 
 \end{tikzpicture}
 ```
+<!-- ------------------------------------------------------------------------ -->
 
-------------------------------------------------------------------------
+<!-- ### Overnight indexed swap (OIS) -->
 
-### Overnight indexed swap (OIS)
+<!-- Interest rate swap wherein a fixed rate of interest (the OIS rate) is exchanged for a reference rate of interest calculated from a realized overnight rate (e.g. SONIA). -->
 
-Interest rate swap wherein a fixed rate of interest (the OIS rate) is exchanged for a reference rate of interest calculated from a realized overnight rate (e.g. SONIA).
+<!-- -   If there is only one exchange, the OIS rate is a **risk-free zero rate** equivalent to the UL overnight rate. -->
 
--   If there is only one exchange, the OIS rate is a **risk-free zero rate** equivalent to the UL overnight rate.
--   Otherwise, the OIS rates define a risk-free bond worth par.
--   An OIS rate can be contrasted with a LIBOR swap, wherein the LIBOR rate for a period is known as the start of the period, so the floating rate of the first exchange is known.
+<!-- -   Otherwise, the OIS rates define a risk-free bond worth par. -->
+
+<!-- -   An OIS rate can be contrasted with a LIBOR swap, wherein the LIBOR rate for a period is known as the start of the period, so the floating rate of the first exchange is known. -->
 
 ## Interest rate swaps: transferring liabilities
 
@@ -136,10 +137,10 @@ Intel converts a **floating**-rate investment to **fixed**-rate investment:
 
 Why use swaps? One reason might be **comparative advantage**: a company might have a relative advantage to borrowing in either fixed-rate markets or floating-rate markets.
 
-|         | fixed rate | floating rate   |
-|---------|------------|-----------------|
-| AAACorp | 4.0%       | floating - 0.1% |
-| BBBCorp | 5.2%       | floating + 0.6% |
+|         | fixed rate | floating rate      |
+|---------|------------|--------------------|
+| AAACorp | 4.0%       | floating $- 0.1\%$ |
+| BBBCorp | 5.2%       | floating $+ 0.6\%$ |
 
 Here, AAACorp and BBBCorp might seek to collaborate:
 
@@ -204,17 +205,13 @@ In practice, the swap might be **brokered** by a financial institution:
 
 \end{tikzpicture}
 ```
-
-
 Why has comparative advantage not been arbitraged away?
-
 
 The **maturities** of contracts available via fixed-rate financing are generally different than those available via floating-rate financing:
 
 -   Fixed-rate contracts are often longer than floating-rate contracts
 -   The spread over the reference rate can effectively be adjusted by floating-rate lenders
 -   Fixed-rate lenders often lack this option
-
 
 ## Currency swaps
 
@@ -237,7 +234,6 @@ The **maturities** of contracts available via fixed-rate financing are generally
 
 \end{tikzpicture}
 ```
-    
 Variations:
 
 -   fixed-for-floating currency swap
@@ -247,7 +243,6 @@ Variations:
 ## Currency swaps: example with comparative advantage {.shrink}
 
 Suppose that General Electric has a **comparative advantage** to borrowing in USD and Qantas Airways has a **comparative advantage** to borrowing in AUD. Financial institution could reduce both of their costs by taking on FX risk:
-
 
 ```{=tex}
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
@@ -284,10 +279,7 @@ Suppose that General Electric has a **comparative advantage** to borrowing in US
 
 \end{tikzpicture}
 ```
-
-
 It might be more cost-effective for Quantas Airways to bear some FX risk:
-
 
 ```{=tex}
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
@@ -324,10 +316,7 @@ It might be more cost-effective for Quantas Airways to bear some FX risk:
 
 \end{tikzpicture}
 ```
-
-
 Or it might be more cost-effective for General Electric to bear some FX risk:
-
 
 ```{=tex}
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
@@ -364,19 +353,17 @@ Or it might be more cost-effective for General Electric to bear some FX risk:
 
 \end{tikzpicture}
 ```
-
-
 ## Other swaps
 
 **Equity swap**: agreement to exchange the total return (dividends plus gains) of an equity index for a fixed for floating rate of interest.
 
 **Credit default swap**: agreement that generates a payment if a particular company (the reference entity) defaults
 
-- the **protection buyer** pays the **CDS spread** (and insurance premium) over the life of the contract
-- in the event of default, the **protection seller** pays an amount that would restore the value of the hypothetical portfolio of the bonds of the reference entity to the value of its principal
+-   the **protection buyer** pays the **CDS spread** (and insurance premium) over the life of the contract
+-   in the event of default, the **protection seller** pays an amount that would restore the value of the hypothetical portfolio of the bonds of the reference entity to the value of its principal
 
 Options:
 
-- entendable swap: one party can extend the swap arrangement
-- puttable swap: one party can terminate the swap arrangement early
-- swaption: option on a swap
+-   entendable swap: one party can extend the swap arrangement
+-   puttable swap: one party can terminate the swap arrangement early
+-   swaption: option on a swap
