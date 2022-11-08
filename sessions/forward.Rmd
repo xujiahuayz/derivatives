@@ -209,6 +209,27 @@ Futures are **exchange-traded** version of forwards
 -   The **clearinghouse** bears the risk of non-performance by any trader.
 -   Contracts are therefore **fungible**: traders can reverse a position by entering the countervailing position with the clearinghouse.
 
+## Examples of futures contract
+
+Commodities:
+
+- agricultural: oats
+- metals: copper, gold
+- energy: crude oil
+
+Financial assets:
+
+- foreign currencies: euro
+- interest rates
+- equity indices
+- single stocks
+
+Delivery can be specified as **physical** or **cash-settled**.
+
+- Cash settlement provides the trader with the same profit that would result from directly purchasing the units in the spot market.
+
+
+
 ## E-mini S&P500 Index Futures Contract
 
 Most popular equity index futures contract in the world
@@ -235,6 +256,17 @@ Most popular equity index futures contract in the world
 
 -   Note that $\sum(\text{cash flow long receives}) = 1$, equal to the payoff on a forward position where the forward price is the original futures price $S_T - F = 107-106 = 1$
 -   **Convergence property**: at maturity, the futures price and spot price must converge; $F_T=P_T$
+
+
+## Normal backwardation and contango
+
+The terms **normal backwardation** and **contango** describe the state of a futures market:
+
+- In **normal backwardation**, the futures price is less than the expected future spot price, $F_0 < \mathbb{E}(S_T)$
+- In **contango**, the futures price is greater than the expected future spot price, $F_0 > \mathbb{E}(S_T)$
+
+In practice, theses terms are sometimes used with reference to the current spot price rather than the expected future spot price.
+
 
 ## Margin and open interest
 
@@ -297,7 +329,7 @@ Most popular equity index futures contract in the world
 
 ## Is the forward price the expected spot price?
 
--   is $F=\mathbb{E}[S_T]$
+-   is $F=\mathbb{E}[S_T]$?
 -   Simplest setting: ignoring holding costs / benefits, using simple compounding at an annual risk-free rate $r_f$, for a 1-year forward
 
 $$F = S \times (1+r_f)$$
@@ -376,7 +408,7 @@ $F = S + \text{intest cost} - \text{convenience yield} + \text{storage costs}$
 
 Convenience yield
 
--   The convenience yield (CY) is a holding benefit
+-   The convenience yield (CY) is a holding benefit, the value of holding a physical asset to keep a production process running or to profit from temporary local shortages
 -   Unlike holding benefits on financial assets (eg dividends or coupons), CY is NOT a cashflow ensured if you are long the underlying
 -   The CY captures the "intangible" benefits of holding the underlying spot for those who consume it / use it in production
 
@@ -389,22 +421,22 @@ Commodities as an asset class
 -   exposure to emerging markets growth ("commodities super cycle")
 -   strong performance (relative to equities) during 2000-2007
 
-## Interest rate futures: convexity adjustment
+<!-- ## Interest rate futures: convexity adjustment -->
 
-For **interest rate futures** longer than about two years, factors related to settlement influence the value of the contracts:
+<!-- For **interest rate futures** longer than about two years, factors related to settlement influence the value of the contracts: -->
 
--   Traders will tend to invest the proceeds from **daily settlement** at prevailing rates, so futures contracts for which there is a mark-to-market gain from an increase in rates (or loss from a decrease in rates) will outperform similar forward contracts
--   **Eurobond** futures are settled at the beginning of the period to which the rate applies, calculated as the present value of what the settlement would be if it were made at the end of the period, and the adverse impact of delaying settlement on holders of forward contracts is greater when there is a gain
+<!-- -   Traders will tend to invest the proceeds from **daily settlement** at prevailing rates, so futures contracts for which there is a mark-to-market gain from an increase in rates (or loss from a decrease in rates) will outperform similar forward contracts -->
+<!-- -   **Eurobond** futures are settled at the beginning of the period to which the rate applies, calculated as the present value of what the settlement would be if it were made at the end of the period, and the adverse impact of delaying settlement on holders of forward contracts is greater when there is a gain -->
 
-So:
+<!-- So: -->
 
-$$\text{forward rate} =  \text{future rate} - c$$
+<!-- $$\text{forward rate} =  \text{future rate} - c$$ -->
 
-where $c > 0$ is the convexity adjustment
+<!-- where $c > 0$ is the convexity adjustment -->
 
 ## Interest rate futures: estimating forward interest rates
 
-interest rate futures can be used to bootstrap zero curves (e.g. SONIA):
+interest rate futures can be used to bootstrap zero curves (e.g. Sterling Overnight Index Average, or SONIA):
 
 $$
 R_F = \frac{R_2T_2 - R_1T_1}{T_2 - T_1}
@@ -414,28 +446,34 @@ $$
 R_2 = \frac{R_F (T_2 - T_1) + R_1 T_1}{T_2}
 $$
 
-## Interest rate futures: duration-based hedging
 
-If we assume that the change in forward yield $\Delta y$ is the same for all maturities, then:
+$R_1, R_2$: zero rate for maturities $T_1,T_2$ respectively
 
-$$
-\Delta P = -PD_P\Delta y
-$$
+$R_F$: forward rate applicable to the period from $T_1$ to $T_2$
 
-$$
-\Delta V_F = -V_F D_F \Delta y
-$$
 
-$$
-N^* = \frac{P D_P}{V_F D_F}
-$$
+<!-- ## Interest rate futures: duration-based hedging -->
 
-$V_F$: contract price for one interest rate futures contrast
+<!-- If we assume that the change in forward yield $\Delta y$ is the same for all maturities, then: -->
 
-$D_F$: duration of underlying asset at maturity of the futures contract
+<!-- $$ -->
+<!-- \Delta P = -PD_P\Delta y -->
+<!-- $$ -->
 
-$P$: forward value of the portfolio being hedged at maturity of the hedge (often assumed to be the same as the initial value of the portfolio)
+<!-- $$ -->
+<!-- \Delta V_F = -V_F D_F \Delta y -->
+<!-- $$ -->
 
-$D_P$: duration of the portfolio at the maturity of the hedge
+<!-- $$ -->
+<!-- N^* = \frac{P D_P}{V_F D_F} -->
+<!-- $$ -->
 
-$N^*$: **duration-based hedge ratio**, the optimal number of contracts to hedge against uncertain $\Delta y$
+<!-- $V_F$: contract price for one interest rate futures contrast -->
+
+<!-- $D_F$: duration of underlying asset at maturity of the futures contract -->
+
+<!-- $P$: forward value of the portfolio being hedged at maturity of the hedge (often assumed to be the same as the initial value of the portfolio) -->
+
+<!-- $D_P$: duration of the portfolio at the maturity of the hedge -->
+
+<!-- $N^*$: **duration-based hedge ratio**, the optimal number of contracts to hedge against uncertain $\Delta y$ -->

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.12.11)  8 NOV 2022 09:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.12.11)  8 NOV 2022 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1334,20 +1334,6 @@ Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 [16
 
 ]
-Overfull \hbox (13.0957pt too wide) in alignment at lines 539--539
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (13.0957pt too wide) in alignment at lines 539--539
- [] [] [] [] [] [] 
- []
-
-
-Class beamer Warning: Frame text is shrunk by a factor of 11.23352 percent inst
-ead of 0 percent on input line 539.
-
-
 Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 [][] 
  []
@@ -1355,6 +1341,20 @@ Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 [17
 
 ]
+Overfull \hbox (13.0957pt too wide) in alignment at lines 577--577
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (13.0957pt too wide) in alignment at lines 577--577
+ [] [] [] [] [] [] 
+ []
+
+
+Class beamer Warning: Frame text is shrunk by a factor of 11.23352 percent inst
+ead of 0 percent on input line 577.
+
+
 Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 [][] 
  []
@@ -1411,10 +1411,6 @@ Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 [25
 
 ]
-Overfull \vbox (53.7624pt too high) detected at line 766
- []
-
-
 Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 [][] 
  []
@@ -1457,7 +1453,7 @@ Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 [31
 
 ]
-Overfull \hbox (11.45677pt too wide) in paragraph at lines 1013--1013
+Overfull \hbox (11.45677pt too wide) in paragraph at lines 1018--1018
 [][]  
  []
 
@@ -1476,23 +1472,23 @@ Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 [33
 
 ]
-Overfull \hbox (5.13892pt too wide) in paragraph at lines 1166--1166
+Overfull \hbox (5.13892pt too wide) in paragraph at lines 1171--1171
 [][]  
  []
 
 
-Overfull \hbox (5.13892pt too wide) in paragraph at lines 1166--1166
+Overfull \hbox (5.13892pt too wide) in paragraph at lines 1171--1171
 [][]  
  []
 
 
-Overfull \hbox (5.13892pt too wide) in paragraph at lines 1166--1166
+Overfull \hbox (5.13892pt too wide) in paragraph at lines 1171--1171
 [][]  
  []
 
 
 Class beamer Warning: Frame text is shrunk by a factor of 9.70917 percent inste
-ad of 0 percent on input line 1166.
+ad of 0 percent on input line 1171.
 
 
 Overfull \hbox (8.79997pt too wide) has occurred while \output is active
@@ -1528,17 +1524,17 @@ Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 (./derivatives.aux) ) 
 Here is how much of TeX's memory you used:
  29925 strings out of 478353
- 596683 string characters out of 5848085
+ 596656 string characters out of 5848085
  916345 words of memory out of 5000000
  47168 multiletter control sequences out of 15000+600000
- 484666 words of font info for 149 fonts, out of 8000000 for 9000
+ 484631 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,1008b,860s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-
-mathsy.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
-}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/t
-exlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2021/te
-xmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2021/texmf-dist/f
+mathex.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/u
+sr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texli
+ve/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/te
+xmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2021/texmf-dist/f
 onts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
 /public/lm/lmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm
 /lmss10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmss8.pfb
@@ -1546,13 +1542,12 @@ onts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
 ocal/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2021/t
 exmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/
-fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
-/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/t
-ype1/public/amsfonts/symbols/msbm10.pfb>
-Output written on derivatives.pdf (36 pages, 230147 bytes).
+fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on derivatives.pdf (36 pages, 226192 bytes).
 PDF statistics:
- 348 PDF objects out of 1000 (max. 8388607)
- 268 compressed objects within 3 object streams
+ 343 PDF objects out of 1000 (max. 8388607)
+ 265 compressed objects within 3 object streams
  106 named destinations out of 1000 (max. 500000)
  49200 words of extra memory for PDF output out of 51595 (max. 10000000)
 
