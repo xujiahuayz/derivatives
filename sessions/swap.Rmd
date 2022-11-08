@@ -44,9 +44,9 @@ Apple uses a swap to convert **floating**-rate borrowings to **fixed**-rate borr
 
 \draw   (0,10) -- (80,10) -- (80,50) -- (0,50) -- cycle ;
 \draw    (80,20) -- (160,20) ;
-\draw [shift={(160,20)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw [shift={(80,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
 \draw    (160,40) -- (80,40) ;
-\draw [shift={(80,40)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw [shift={(160,40)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
 \draw   (160,10) -- (230,10) -- (230,50) -- (160,50) -- cycle ;
 \draw    (230,30) -- (320,30) ;
 \draw [shift={(320,30)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
@@ -68,9 +68,9 @@ Intel uses a swap to convert **fixed**-rate borrowings to **floating**-rate borr
 
 \draw   (0,10) -- (80,10) -- (80,50) -- (0,50) -- cycle ;
 \draw    (80,20) -- (160,20) ;
-\draw [shift={(80,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw [shift={(160,20)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
 \draw    (160,40) -- (80,40) ;
-\draw [shift={(160,40)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw [shift={(80,40)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
 \draw   (160,10) -- (230,10) -- (230,50) -- (160,50) -- cycle ;
 \draw    (230,30) -- (320,30) ;
 \draw [shift={(320,30)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
@@ -94,9 +94,9 @@ Apple converts a **fixed**-rate investment to **floating**-rate investment:
 
 \draw   (0,10) -- (80,10) -- (80,50) -- (0,50) -- cycle ;
 \draw    (80,20) -- (160,20) ;
-\draw [shift={(160,20)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw [shift={(80,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
 \draw    (160,40) -- (80,40) ;
-\draw [shift={(80,40)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw [shift={(160,40)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
 \draw   (160,10) -- (230,10) -- (230,50) -- (160,50) -- cycle ;
 \draw    (230,30) -- (320,30) ;
 \draw [shift={(230,30)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
@@ -118,9 +118,9 @@ Intel converts a **floating**-rate investment to **fixed**-rate investment:
 
 \draw   (0,10) -- (80,10) -- (80,50) -- (0,50) -- cycle ;
 \draw    (80,20) -- (160,20) ;
-\draw [shift={(80,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw [shift={(160,20)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
 \draw    (160,40) -- (80,40) ;
-\draw [shift={(160,40)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
+\draw [shift={(80,40)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
 \draw   (160,10) -- (230,10) -- (230,50) -- (160,50) -- cycle ;
 \draw    (230,30) -- (320,30) ;
 \draw [shift={(230,30)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3,-0.3) .. (0,0) .. controls (3,0.3) and (7,1) .. (10,3)   ;
@@ -148,15 +148,15 @@ Here, AAACorp and BBBCorp might seek to collaborate:
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 
 \draw   (75,10) -- (149,10) -- (149,50) -- (75,50) -- cycle ;
-\draw    (151.37,20) -- (224,20.33) ;
-\draw [shift={(226,20.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
-\draw    (224,39.34) -- (152.03,39.98) ;
-\draw [shift={(150.03,40)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (150,20) -- (220,20.33) ;
+\draw [shift={(150,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw    (220,40) -- (150,40) ;
+\draw [shift={(220,40)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw   (225.73,9.07) -- (297,9.07) -- (297,50) -- (225.73,50) -- cycle ;
 \draw    (300,31) -- (388,31.33) ;
-\draw [shift={(390,31.34)}, rotate = 180.21] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw [shift={(390,31.34)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw    (75,31.34) -- (3.03,31.98) ;
-\draw [shift={(1.03,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw [shift={(0,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 
 \draw (80,21.9) node [anchor=north west][inner sep=0.75pt]   [align=left] {AAACorp};
 \draw (176.7,2) node [anchor=north west][inner sep=0.75pt]   [align=left] {4.35\%};
@@ -177,16 +177,16 @@ In practice, the swap might be **brokered** by a financial institution:
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 
 \draw   (75,10) -- (149,10) -- (149,50) -- (75,50) -- cycle ;
-\draw    (151.37,38) -- (224,38.33) ;
+\draw    (150,38) -- (220,38.33) ;
 \draw [shift={(226,38.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
-\draw    (220,19.34) -- (150.03,20) ;
+\draw    (220,19.34) -- (150,20) ;
 \draw [shift={(148.03,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw   (370.73,7.07) -- (445,7.07) -- (445,48) -- (370.73,48) -- cycle ;
 \draw    (445.37,29) -- (505,29.22) -- (536,29.33) ;
 \draw [shift={(538,30)}, rotate = 180.21] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw    (75,31.34) -- (3.03,31.98) ;
-\draw [shift={(1.03,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
-\draw  [fill={rgb, 255:red, 1; green, 233; blue, 1 }  ,fill opacity=1 ] (224,6.73) -- (298,6.73) -- (298,47.67) -- (224,47.67) -- cycle ;
+\draw [shift={(0,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw  [fill={rgb, 255:red, 1; green, 233; blue, 1 }  ,fill opacity=1 ] (220,6.73) -- (298,6.73) -- (298,47.67) -- (220,47.67) -- cycle ;
 \draw    (300,36) -- (370,36.33) ;
 \draw [shift={(375,36.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw    (371,17.34) -- (299.03,17.98) ;
@@ -248,16 +248,16 @@ Suppose that General Electric has a **comparative advantage** to borrowing in US
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 
 \draw   (75,10) -- (149,10) -- (149,50) -- (75,50) -- cycle ;
-\draw    (151.37,38) -- (224,38.33) ;
+\draw    (150,38) -- (220,38.33) ;
 \draw [shift={(226,38.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
-\draw    (220,19.34) -- (150.03,20) ;
+\draw    (220,19.34) -- (150,20) ;
 \draw [shift={(148.03,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw   (370.73,7.07) -- (445,7.07) -- (445,48) -- (370.73,48) -- cycle ;
 \draw    (445.37,29) -- (505,29.22) -- (536,29.33) ;
 \draw [shift={(538,30)}, rotate = 180.21] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw    (75,31.34) -- (3.03,31.98) ;
-\draw [shift={(1.03,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
-\draw  [fill={rgb, 255:red, 1; green, 233; blue, 1 }  ,fill opacity=1 ] (224,6.73) -- (298,6.73) -- (298,47.67) -- (224,47.67) -- cycle ;
+\draw [shift={(0,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw  [fill={rgb, 255:red, 1; green, 233; blue, 1 }  ,fill opacity=1 ] (220,6.73) -- (298,6.73) -- (298,47.67) -- (220,47.67) -- cycle ;
 \draw    (300,36) -- (370,36.33) ;
 \draw [shift={(375,36.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw    (371,17.34) -- (299.03,17.98) ;
@@ -285,16 +285,16 @@ It might be more cost-effective for Quantas Airways to bear some FX risk:
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 
 \draw   (75,10) -- (149,10) -- (149,50) -- (75,50) -- cycle ;
-\draw    (151.37,38) -- (224,38.33) ;
+\draw    (150,38) -- (220,38.33) ;
 \draw [shift={(226,38.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
-\draw    (220,19.34) -- (150.03,20) ;
+\draw    (220,19.34) -- (150,20) ;
 \draw [shift={(148.03,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw   (370.73,7.07) -- (445,7.07) -- (445,48) -- (370.73,48) -- cycle ;
 \draw    (445.37,29) -- (505,29.22) -- (536,29.33) ;
 \draw [shift={(538,30)}, rotate = 180.21] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw    (75,31.34) -- (3.03,31.98) ;
-\draw [shift={(1.03,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
-\draw  [fill={rgb, 255:red, 1; green, 233; blue, 1 }  ,fill opacity=1 ] (224,6.73) -- (298,6.73) -- (298,47.67) -- (224,47.67) -- cycle ;
+\draw [shift={(0,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw  [fill={rgb, 255:red, 1; green, 233; blue, 1 }  ,fill opacity=1 ] (220,6.73) -- (298,6.73) -- (298,47.67) -- (220,47.67) -- cycle ;
 \draw    (300,36) -- (370,36.33) ;
 \draw [shift={(375,36.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw    (371,17.34) -- (299.03,17.98) ;
@@ -322,16 +322,16 @@ Or it might be more cost-effective for General Electric to bear some FX risk:
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 
 \draw   (75,10) -- (149,10) -- (149,50) -- (75,50) -- cycle ;
-\draw    (151.37,38) -- (224,38.33) ;
+\draw    (150,38) -- (220,38.33) ;
 \draw [shift={(226,38.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
-\draw    (220,19.34) -- (150.03,20) ;
+\draw    (220,19.34) -- (150,20) ;
 \draw [shift={(148.03,20)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw   (370.73,7.07) -- (445,7.07) -- (445,48) -- (370.73,48) -- cycle ;
 \draw    (445.37,29) -- (505,29.22) -- (536,29.33) ;
 \draw [shift={(538,30)}, rotate = 180.21] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw    (75,31.34) -- (3.03,31.98) ;
-\draw [shift={(1.03,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
-\draw  [fill={rgb, 255:red, 1; green, 233; blue, 1 }  ,fill opacity=1 ] (224,6.73) -- (298,6.73) -- (298,47.67) -- (224,47.67) -- cycle ;
+\draw [shift={(0,32)}, rotate = 0] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
+\draw  [fill={rgb, 255:red, 1; green, 233; blue, 1 }  ,fill opacity=1 ] (220,6.73) -- (298,6.73) -- (298,47.67) -- (220,47.67) -- cycle ;
 \draw    (300,36) -- (370,36.33) ;
 \draw [shift={(375,36.34)}, rotate = 180.26] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10,-3) .. controls (7,-1) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (7,1) .. (10,3)   ;
 \draw    (371,17.34) -- (299.03,17.98) ;

@@ -2,7 +2,7 @@
 
 A forward is
 
--   an OTC (over-the-counter) contract in which two counterparties agree, with zero money down, to buy / sell the UCL at a pre-agreed *forward price* at a given *delivery date* in the future
+-   an OTC (over-the-counter) contract in which two counterparties agree, with zero money down, to buy / sell the UL at a pre-agreed *forward price* at a given *delivery date* in the future
 
 The contract is an *obligation* of both parties to transact, designed to protect both the buyer and the seller from price fluctuations in the future.
 
@@ -141,7 +141,7 @@ For example, if the actual forward price is quoted at 41.2
 -   Consider another stock
 
     -   currently traded at £40
-    -   pays a dividend of £1 in 5 months
+    -   pays a dividend of £1 in 6 months
     -   with an expected return of 5% p.a.
     -   risk-free rate is 2% p.a.
 

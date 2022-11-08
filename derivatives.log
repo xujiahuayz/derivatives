@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.12.11)  8 NOV 2022 10:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.12.11)  8 NOV 2022 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1446,7 +1446,7 @@ Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 [30
 
 ]
-Overfull \hbox (11.45677pt too wide) in paragraph at lines 996--996
+Overfull \hbox (12.22926pt too wide) in paragraph at lines 996--996
 [][]  
  []
 
@@ -1465,17 +1465,17 @@ Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 [32
 
 ]
-Overfull \hbox (5.13892pt too wide) in paragraph at lines 1149--1149
+Overfull \hbox (5.9114pt too wide) in paragraph at lines 1149--1149
 [][]  
  []
 
 
-Overfull \hbox (5.13892pt too wide) in paragraph at lines 1149--1149
+Overfull \hbox (5.9114pt too wide) in paragraph at lines 1149--1149
 [][]  
  []
 
 
-Overfull \hbox (5.13892pt too wide) in paragraph at lines 1149--1149
+Overfull \hbox (5.9114pt too wide) in paragraph at lines 1149--1149
 [][]  
  []
 
@@ -1516,11 +1516,11 @@ Overfull \hbox (8.79997pt too wide) has occurred while \output is active
 
 (./derivatives.aux) ) 
 Here is how much of TeX's memory you used:
- 29918 strings out of 478353
- 596577 string characters out of 5848085
- 916281 words of memory out of 5000000
+ 29922 strings out of 478353
+ 596623 string characters out of 5848085
+ 916083 words of memory out of 5000000
  47166 multiletter control sequences out of 15000+600000
- 484530 words of font info for 148 fonts, out of 8000000 for 9000
+ 484767 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,1008b,860s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-
@@ -1537,7 +1537,7 @@ ive/2021/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2021/t
 exmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on derivatives.pdf (35 pages, 225213 bytes).
+Output written on derivatives.pdf (35 pages, 225130 bytes).
 PDF statistics:
  337 PDF objects out of 1000 (max. 8388607)
  260 compressed objects within 3 object streams
